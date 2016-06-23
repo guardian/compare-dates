@@ -1,0 +1,29 @@
+{
+  "name": "compare-dates",
+  "description": "Simple modular utilities to compare JavaScript dates",
+  "repository": "https://github.com/guardian/compare-dates",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "main": "dist/compare.cjs.js",
+  "jsnext:main": "dist/compare.es6.js",
+  "scripts": {
+    "pretest": "eslint src test",
+    "test": "tap test",
+    "build": "rollup -c rollup.config.cjs.js && rollup -c rollup.config.es6.js",
+    "prepublish": "npm test && npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "rollup": "^0.32.0",
+    "rollup-plugin-babel": "^2.4.0",
+    "rollup-plugin-commonjs": "^3.0.0",
+    "rollup-plugin-node-resolve": "^1.5.0",
+    "tap": "^5.7.2"
+  },
+  "engines": {
+    "node": ">= 4"
+  }
+}
