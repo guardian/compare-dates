@@ -2,7 +2,7 @@
   "name": "compare-dates",
   "description": "Simple modular utilities to compare JavaScript dates",
   "repository": "https://github.com/guardian/compare-dates",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "Apache-2.0",
   "main": "dist/compare.cjs.js",
   "jsnext:main": "dist/compare.es6.js",

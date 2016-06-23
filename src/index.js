@@ -11,3 +11,4 @@ export {
 
 export { add, subtract } from './setters';
 export { startOf, endOf } from './start-end-of';
+export { diff } from './diff';
