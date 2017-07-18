@@ -9,6 +9,11 @@ export function daysInMonth (year, month) {
     return new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
 }
 
+export function setDayOfWeek (date, input) {
+    const day = date.getDay();
+    date.setDate(date.getDate() + input - day);
+}
+
 function Duration (duration) {
     var years = duration.year || 0,
         quarters = duration.quarter || 0,

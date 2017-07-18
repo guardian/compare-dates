@@ -98,7 +98,7 @@ tap.test('end of month', test => {
     test.equal(m.getMilliseconds(), 999, 'set the seconds');
     test.done();
 });
-/*
+
 tap.test('start of week', test => {
     var m = startOf(new Date(2011, 1, 2, 3, 4, 5, 6), 'week'),
         ms = startOf(new Date(2011, 1, 2, 3, 4, 5, 6), 'weeks'),
@@ -107,8 +107,7 @@ tap.test('start of week', test => {
     test.equal(+m, +ma, 'Full or abbreviated should work');
     test.equal(m.getFullYear(), 2011, 'keep the year');
     test.equal(m.getMonth(), 0, 'rolls back to January');
-    test.equal(m.day(), 0, 'set day of week');
-    test.equal(m.getDate(), 30, 'set correct date');
+    test.equal(m.getDate(), 31, 'set correct date');
     test.equal(m.getHours(), 0, 'strip out the hours');
     test.equal(m.getMinutes(), 0, 'strip out the minutes');
     test.equal(m.getSeconds(), 0, 'strip out the seconds');
@@ -124,15 +123,14 @@ tap.test('end of week', test => {
     test.equal(+m, +ma, 'Full or abbreviated should work');
     test.equal(m.getFullYear(), 2011, 'keep the year');
     test.equal(m.getMonth(), 1, 'keep the month');
-    test.equal(m.day(), 6, 'set the day of the week');
-    test.equal(m.getDate(), 5, 'set the day');
+    test.equal(m.getDate(), 6, 'set the day');
     test.equal(m.getHours(), 23, 'set the hours');
     test.equal(m.getMinutes(), 59, 'set the minutes');
     test.equal(m.getSeconds(), 59, 'set the seconds');
     test.equal(m.getMilliseconds(), 999, 'set the seconds');
     test.done();
 });
-
+/*
 tap.test('start of iso-week', test => {
     var m = startOf(new Date(2011, 1, 2, 3, 4, 5, 6), 'isoWeek'),
         ms = startOf(new Date(2011, 1, 2, 3, 4, 5, 6), 'isoWeeks'),

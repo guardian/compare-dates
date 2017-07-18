@@ -2,7 +2,7 @@
   "name": "compare-dates",
   "description": "Simple modular utilities to compare JavaScript dates",
   "repository": "https://github.com/guardian/compare-dates",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "Apache-2.0",
   "main": "dist/compare.cjs.js",
   "jsnext:main": "dist/compare.es6.js",
@@ -16,16 +16,16 @@
     "dist"
   ],
   "devDependencies": {
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
-    "babel-plugin-transform-es2015-parameters": "^6.9.0",
-    "babel-plugin-transform-es2015-spread": "^6.8.0",
-    "babel-register": "^6.9.0",
-    "eslint": "^2.13.1",
-    "rollup": "^0.32.2",
-    "rollup-plugin-babel": "^2.6.0",
-    "rollup-plugin-commonjs": "^3.0.0",
-    "rollup-plugin-node-resolve": "^1.5.0",
-    "tap": "^5.7.2"
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-es2015-parameters": "^6.24.1",
+    "babel-plugin-transform-es2015-spread": "^6.22.0",
+    "babel-register": "^6.24.1",
+    "eslint": "^4.2.0",
+    "rollup": "^0.45.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "tap": "^10.7.0"
   },
   "engines": {
     "node": ">= 4.3"

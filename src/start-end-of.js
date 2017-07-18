@@ -1,5 +1,5 @@
 import { normalizeUnits } from './units';
-import { setMonth } from './setters';
+import { setMonth, setDayOfWeek } from './setters';
 import { add, subtract} from './setters';
 
 export function startOf (date, units) {
@@ -15,6 +15,7 @@ export function startOf (date, units) {
         case 'month':
             modified.setDate(1);
             /* falls through */
+        case 'week':
         case 'day':
         case 'date':
             modified.setHours(0);
@@ -27,6 +28,11 @@ export function startOf (date, units) {
             /* falls through */
         case 'second':
             modified.setMilliseconds(0);
+    }
+
+    // weeks are a special case
+    if (units === 'week') {
+        setDayOfWeek(modified, 1);
     }
 
     // quarters are also special
