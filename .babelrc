@@ -1,6 +1,3 @@
 {
-	"plugins": [
-		"babel-plugin-transform-es2015-spread",
-		"babel-plugin-transform-es2015-parameters"
-	]
+	"plugins": []
 }

@@ -1,4 +1,4 @@
-require('babel-register')({ plugins: ['transform-es2015-modules-commonjs'] });
+require('@babel/register')({ plugins: ['@babel/plugin-transform-modules-commonjs'] });
 const tap = require('tap');
 const daysInMonth = require('../src/setters').daysInMonth;
 

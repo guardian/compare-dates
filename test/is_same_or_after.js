@@ -1,4 +1,4 @@
-require('babel-register')({ plugins: ['transform-es2015-modules-commonjs', 'babel-plugin-transform-es2015-spread', 'babel-plugin-transform-es2015-parameters'] });
+require('@babel/register')({ plugins: ['@babel/plugin-transform-modules-commonjs'] });
 const tap = require('tap');
 const isSameOrAfter = require('../src/index').isSameOrAfter;
 

@@ -9,25 +9,24 @@
   "scripts": {
     "pretest": "eslint src test",
     "test": "tap test",
-    "build": "rollup -c rollup.config.cjs.js && rollup -c rollup.config.es6.js",
+    "build": "rollup -c",
     "prepublish": "npm test && npm run build"
   },
   "files": [
     "dist"
   ],
   "devDependencies": {
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.10.3",
-    "babel-plugin-transform-es2015-parameters": "^6.9.0",
-    "babel-plugin-transform-es2015-spread": "^6.8.0",
-    "babel-register": "^6.9.0",
-    "eslint": "^2.13.1",
-    "rollup": "^0.32.2",
-    "rollup-plugin-babel": "^2.6.0",
-    "rollup-plugin-commonjs": "^3.0.0",
-    "rollup-plugin-node-resolve": "^1.5.0",
-    "tap": "^5.7.2"
+    "@babel/core": "7.4.0",
+    "@babel/plugin-transform-modules-commonjs": "7.4.0",
+    "@babel/register": "7.4.0",
+    "eslint": "^5.15.3",
+    "rollup": "^1.7.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "tap": "^12.6.1"
   },
   "engines": {
-    "node": ">= 4.3"
+    "node": ">= 8.0"
   }
 }

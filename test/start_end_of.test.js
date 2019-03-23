@@ -1,4 +1,4 @@
-require('babel-register')({ plugins: ['transform-es2015-modules-commonjs'] });
+require('@babel/register')({ plugins: ['@babel/plugin-transform-modules-commonjs'] });
 const tap = require('tap');
 const startOf = require('../src/start-end-of').startOf;
 const endOf = require('../src/start-end-of').endOf;

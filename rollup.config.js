@@ -3,12 +3,17 @@ import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 
 export default {
-	entry: 'src/index.js',
+	input: 'src/index.js',
 	plugins: [
 		babel(),
 		nodeResolve(),
 		commonjs()
 	],
-	format: 'es',
-	dest: 'dist/compare.es6.js'
+	output: [{
+		file: 'dist/compare.cjs.js',
+		format: 'cjs',
+	}, {
+		file: 'dist/compare.es6.js',
+		format: 'esm',
+	}],
 };
